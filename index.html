@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Série O11ZE</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./onze.PNG" alt="Logo O11ZE" class="logo">
+    </div>
+    <nav>
+      <button class="menu-toggle">☰</button>
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#video">Trailer</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+</header>
+<ul class="menu2">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#video">Trailer</a></li>
+    <li><a href="#planos">Planos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre a Série</h2>
+      <p>
+        O11ZE é uma série que mistura drama e futebol, acompanhando a história de Gabo, um jovem talentoso que luta para conquistar seu lugar em um time de futebol competitivo. A trama explora os desafios que ele enfrenta tanto dentro de campo quanto em sua vida pessoal, abordando temas como superação, amizade e as pressões do mundo esportivo. Uma história emocionante sobre o caminho para realizar grandes sonhos no universo do futebol.
+      </p>
+    </section>
+
+    <section id="video">
+      <h2>Trailer</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mZHzcwqo6BE?si=CaR9Dx4elzshGCCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="planos">
+      <h2>Planos de Acesso</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plano</th>
+            <th>Preço</th>
+            <th>Qualidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Básico</td>
+            <td>R$ 14,90</td>
+            <td>SD</td>
+          </tr>
+          <tr>
+            <td>Intermediário</td>
+            <td>R$ 24,90</td>
+            <td>HD</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>R$ 34,90</td>
+            <td>Full HD</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Siga-nos nas redes sociais:</p>
+    <ul class="social">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">YouTube</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu2");
+    toggle.addEventListener("click", () => menu.classList.toggle("show"));
+  </script>
+</body>
+</html>
